@@ -19,7 +19,7 @@ class User(db.Model):
 
 
 class Planets(db.Model):
-    __tablename__ = "planet"
+    __tablename__ = "planets"
 
     id: Mapped[int] = mapped_column(primary_key=True)
     name: Mapped[str] = mapped_column(String(100), nullable=False)
@@ -36,7 +36,7 @@ class Planets(db.Model):
 
 
 class Vehicles(db.Model):
-    __tablename__ = "vehicle"
+    __tablename__ = "vehicles"
 
     id: Mapped[int] = mapped_column(primary_key=True)
     name: Mapped[str] = mapped_column(String(100), nullable=False)
